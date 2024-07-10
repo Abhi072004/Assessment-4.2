@@ -13,11 +13,11 @@ import (
 
 const (
 	// TODO: choose a human-readable part for your hyperchain
-	HRP = ""
+	HRP = "Decentralized Auction"
 	// TODO: choose a name for your hyperchain
-	Name = ""
+	Name = "DeAuction"
 	// TODO: choose a token symbol
-	Symbol = ""
+	Symbol = "DACN"
 )
 
 var ID ids.ID

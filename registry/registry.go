@@ -36,6 +36,9 @@ func init() {
 		consts.ActionRegistry.Register(&actions.ImportAsset{}, actions.UnmarshalImportAsset, true),
 		consts.ActionRegistry.Register(&actions.ExportAsset{}, actions.UnmarshalExportAsset, false),
 
+		consts.ActionRegistry.Register(&actions.CreateAsset{}, actions.CreateAsset, true),
+		consts.ActionRegistry.Register(&actions.MintAsset{}, actions.MintAsset, true),
+
 		// When registering new auth, ALWAYS make sure to append at the end.
 		consts.AuthRegistry.Register(&auth.ED25519{}, auth.UnmarshalED25519, false),
 	)
